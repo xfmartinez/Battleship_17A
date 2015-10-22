@@ -1,0 +1,3 @@
+In this game the computer will randomly set ships of one 
+unit throughout a 4X4 area.Your task is to fire missiles by 
+inputting coordinates with in this area till you hit all 4 ships
