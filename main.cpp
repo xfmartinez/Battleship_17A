@@ -31,8 +31,8 @@ bool attack(int,int, int **);  //Function has user input coordinates
 
 
 //second set of functions are products of two players
-void LodShip(SHIP []);     //Function has 5 different ship types with length and name 
-void RestBrd(PLAYER []);   //The Function will loop back to determine the boards of ply 1&2
+void LodShip(SHIP []);         //Function has 5 different ship types with length and name 
+void RestBrd(PLAYER []);       //The Function will loop back to determine the boards of ply 1&2
 void DrwBord(int, PLAYER []);  //Shows the actual board of either players with ships/water
 PLASHIP UISP();                //User input ship placement 
 bool UsrAttk(int&,int&,int);   //user will input coordinates function will check through bool
@@ -42,17 +42,24 @@ void RedFle(string);
 
 //Execution begins Here!!
 int main(int argc, char** argv) { 
-
-//Declare Variables 
+    
+//Put in function prototypes/Structures 
     PLAYER player[3];     //Ignore player 0, just using player's 1 & 2
     SHIP ship[TYPSHIP];
-    Yo p;  //Passing structure from header file.
-    Hey c;  //Structure in header file 
+    Yo p;                 //Passing structure from header file.
+    Hey c;                //Structure in header file 
     
+//Declare Variables    
     const int ROWS= 4;
     int col=4; 
     int r=4;
 
+    char pos1,pos2;    //user will input character data type 
+    char choice;       //user will have a choice to quit -> goes into switch 
+    int pick;          //User will chose to play single or versus 
+    
+    
+    
     const int *ptr;  //<- include a pointer 
     ptr=&ROWS;
     int maxShip = 4;
@@ -60,11 +67,6 @@ int main(int argc, char** argv) {
     for(int i=0; i<ROWS; i++){
         matri[i]=new int [col];
     }
-
-
-char pos1,pos2;    //user will input character data type 
-char choice;       //user will have a choice to quit -> goes into switch 
-int pick;          //User will chose to play single or versus 
 
 //Prompt user for game choice 
 cout<<"GET READY FOR BATTLE SHIP!!!!"<<endl;
@@ -76,10 +78,10 @@ cin>>pick;
  
 
 if(pick==1){    
-   srand(time(NULL));  //<- looks fancy means 0 
+   srand(time(NULL));     //<- looks fancy means 0 
    clear(matri);
    shipset(maxShip,matri);
-   RedFle("inst.txt");  //<- inlude file with instructions
+   RedFle("inst.txt");    //<- inlude file with instructions
             
     do{
         cout<<"Please insert coordinates in a 4X4 matrix"<<endl;

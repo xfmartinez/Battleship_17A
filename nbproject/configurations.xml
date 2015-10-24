@@ -5,7 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>/Users/Electromagnetivewave/Desktop/Battleship_17A/Here.h</itemPath>
-      <itemPath>/Users/Electromagnetivewave/Desktop/Battleship_17A/Plaship.h</itemPath>
       <itemPath>/Users/Electromagnetivewave/Desktop/Battleship_17A/Structs.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -45,11 +44,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="/Users/Electromagnetivewave/Desktop/Battleship_17A/Plaship.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="/Users/Electromagnetivewave/Desktop/Battleship_17A/Structs.h"
             ex="false"
             tool="3"
@@ -84,11 +78,6 @@
         </asmTool>
       </compileType>
       <item path="/Users/Electromagnetivewave/Desktop/Battleship_17A/Here.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/Users/Electromagnetivewave/Desktop/Battleship_17A/Plaship.h"
             ex="false"
             tool="3"
             flavor2="0">

@@ -43,7 +43,7 @@ struct SHIP {
 //Structure will show the game board to the players uses double array
 struct PLAYER {
 	char grid[BOARD_L][BOARD_W];
-        char **a;
+
 };
 
 
